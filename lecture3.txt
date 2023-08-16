@@ -1,0 +1,351 @@
+lecture -3
+
+g++ a.cpp -wall  # warning remove from the code
+
+progrma-1
+
+
+#include<iostream>
+int main(void)
+{
+  int a;
+  std::cout<<"hello world"<<std::endl;
+  
+  return 0;
+}
+
+program -2
+
+
+#include<iostream>
+int main(void)
+{
+  int a;
+  std::cout<<"hello world"<<std::endl;
+  
+  return 0;
+  
+  std::cin>>a;
+  
+}
+
+in this program they give me warning  in my code
+
+
+g++ -o1/-o2 a.cpp  // for more optimization
+time ./a.out  - 
+
+some other example
+
+b=0;
+
+for(i=0;i<5;i++)
+{
+  b= b+i;
+    // direct convert to b = b+10;
+}
+
+*** compilation becomes slower
+***  debugging become more complex
+
+optimization option should be used only during deployment not during debugging 
+
+
+#include<iostream>  // <stdio.h> in c  //  #include<cstdio> // across all over the operating system
+using namespace std;
+int main()
+{
+  
+  cout<<"hello world"<<endl;
+  
+  return 0;  
+  
+}
+
+<< /operater in c++ 
+end - end of the line
+
+how does the c++ support the feature of oops
+
+oop-> 
+    1 -> data abstraction & encapsulation
+    2 -> intergration
+    3 -> polymorphism
+    
+data abstraction  ->
+     co-> processor works , main memory works
+     os -> assume the processor works in a certain way
+     ML -> the assumption is that some black_box (os) schedule the jobs and result
+     
+communication system :-> multiple antesm   begine used in wifi api
+   
+   
+   some funcation can be used by other , where "other" funcation are the internal use.
+   
+*** Encapsulation -> group the realted data and funcation that deal with them together.   
+
+
+struct stack
+{
+ int data[100];
+ int top;
+
+};
+
+  void push(stcak &s , int ele)
+  {
+
+  }
+  int pop(stck &s )
+  {
+ 
+  }
+
+now using class
+
+class stack{
+
+int data[100];
+int top;
+void push(int ele);
+int pop();
+
+};
+
+  void stack::push(int ele)
+  {
+  
+  }
+  int stack::pop()
+  {
+  
+  }
+  
+  
+-> data hiding
+     -> private
+     -> protected
+     -> public
+     
+   -> it is the part of the abstraction
+   
+   int main(void)
+   {
+      stck s;
+      s.data[top] =100;
+   } 
+   
+-> Inheritance :-
+    Allow reutilization of code 
+    -> inherit classes so that some class funcationality  can be extended 
+    
+    -> 
+      class ds 
+      {
+      
+         void print();
+      }
+      
+      class stack::public ds
+      {
+       // print funcation is avilible here
+      
+      }
+       class queue::public ds
+      {
+       // print funcation is avilible here
+      
+      }
+      
+      *** needs to be used carefully avoid intriducing more bugs
+      
+      *** To be disscused later
+      
+3. Polymorphism ->
+     redefine funcation and operation to according to the type of the data.
+     
+     *** Funcation overloading :->
+              int add(int a ,int b)
+              {
+                return a+b;
+              }
+              float add(float a ,float b)
+              {
+                 return a+b;
+              }
+     
+     *** operater overloading :->
+              
+              class stack 
+              {
+                 void operator+(int ele)
+                 { 
+                 
+                 //do the push
+                 }
+                 
+              }  
+              
+              int main()
+              {
+              stack s;
+              s =s+5;  // push 5 into stack;
+              }       
+              
+              create a simple class program using class then within the class check how the public and private members can be accessed
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
